@@ -45,8 +45,14 @@ res.render('home.hbs',
 {
     welcomeMessage:"Welcome to my website",
     pageTitle: 'Home Page',
+});
 }); 
 
+app.get('/project', (req,res) => {
+res.render('project.hbs',
+{
+    welcomeMessage:"Portfolio Page here"
+});
 });
 
 app.get('/about' ,(req,res) => {
